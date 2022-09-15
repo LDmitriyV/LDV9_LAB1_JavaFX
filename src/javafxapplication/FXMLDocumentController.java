@@ -46,25 +46,7 @@ public class FXMLDocumentController implements Initializable {
     @FXML
     private void buttonMathAction(ActionEvent event) {
         double a = 0, b = 0, x= 0, y;
-        try {
-            a = Double.parseDouble(textField_A.getText());
-            b = Double.parseDouble(textField_B.getText());
-            x = Double.parseDouble(textField_X.getText());
-        } catch (Exception ex) {
-            Toolkit.getDefaultToolkit().beep();
-            Component rootPane = null;
-            JOptionPane.showMessageDialog(rootPane, "Ошибка введенных данных!", "Ошибка ввода",
-                    JOptionPane.ERROR_MESSAGE);
-            textField_A.requestFocus();
-            textField_B.requestFocus();
-            textField_X.requestFocus();
-            label_otvet.setText("В введенных значениях допущены ошибки");
-            textField_A.setText("???");
-            textField_B.setText("???");
-            textField_X.setText("???");
-            return;
-        }
-        try {
+try {
             a = Double.parseDouble(textField_A.getText());
         } catch (Exception ex) {
             Toolkit.getDefaultToolkit().beep();
