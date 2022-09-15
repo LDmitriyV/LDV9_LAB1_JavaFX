@@ -102,7 +102,7 @@ try {
         }
 
         if (x < 6) {
-            y = a / x + b / x * 2;
+            y = a / x + b / x * x;
             //label_otvet.setText("Ответ: " + String.format("%.2f",y));
         } else {
             y = a * 2 * (x + b);
